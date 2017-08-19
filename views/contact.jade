@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	.container
+
+		h1 #{title}
+		div.col-md-6
+
+			form(method="post", action="/contact/send")
+				.form-group
+					label Name
+					input.form-control(type="text", name="Name", placeholder="Enter Name")
+				.form-group
+					label Email
+					input.form-control(type="email", name="Email", placeholder="Enter Email")
+				.form-group
+					label Message
+					textarea.form-control(name="message", row="50")
+				button.btn.btn-success(type="submit") Send
+
+		div.col-md-6
+			i.icon(class="glyphicon glyphicon-envelope")
