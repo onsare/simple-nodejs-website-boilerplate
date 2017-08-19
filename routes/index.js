@@ -40,7 +40,7 @@ router.post('/contact/send', function(req, res){
 
 	var mailOptions = {
 		from: 'node webite',
-		to:'denisonsare@gmail.com',
+		to:'',
 		subject: 'test',
 		text: 'this is a test',
 		html: '<p>this is a test</p>'
